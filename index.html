@@ -3,11 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Titre page SITE_GRG_01</title>
+  <title>SITE_GRG_01</title>
   <!-- Appel de Google Fonts / lien copié-collé depuis Google Font -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet" /> -->
   <script src="script.js"></script>
   <style>
+.blue-text {
+  color: blue;
+}
+body {
+  background-color: pink;
+  color: red;
+  font-family: monospace;
+}
+
+[type="checkbox"] 
+  margin: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
+
  .thin-red-border {
   border-color: blueviolet;
   border-width: 10px;
@@ -31,6 +44,9 @@
     .pink-text01 {
     color: hotpink;
   }
+  #mocha-photo-form {
+        background-color: pink;
+      }
   </style>
 </head>
 
@@ -38,7 +54,7 @@
   <h1>Test Netlify 01</h1>
   <id="top" test_netlify_h1>
     <!-- test n°4 -->
-    <h2>test_netlfy_h2</h2>
+    <h2 class="blue-text"> test_netlfy_h2</h2>
     <main>
       <p class=green-text01> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptates labore reprehenderit, animi
         asperiores repellat quos facilis quo sed quasi corporis dicta omnis doloremque exercitationem voluptate iste
@@ -61,8 +77,8 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis eligendi illum, possimus facilis
         exercitationem minima ratione incidunt nobis accusantium eius quasi fugiat nemo quaerat perspiciatis sit modi!
         Eveniet, veniam?</p>
-      <a href="http://www.okki.fr/" target="_blank"><img class="smaller-image thin-red-border" alt="elephant"
-          src="https://www.mavieencouleurs.fr/sites/default/files/styles/recipe_banner/public/2018-01/speed-detox.jpg">/</a>
+      <a href="http://www.okki.fr/" target="_blank"> <img class="smaller-image thin-red-border" alt="elephant"
+          src="https://www.mavieencouleurs.fr/sites/default/files/styles/recipe_banner/public/2018-01/speed-detox.jpg"></a>
       <ul>
         <li>1</li>
         <li>2</li>
@@ -79,7 +95,7 @@
         </ul>
         <button type="submit">envoyer</button>
         <div><h2>Trois choses que j'aime</h2>
-        <form action="#">
+        <form id="mocha-photo-form" action="#">
           <label for="tapis">
             Tapis
             <input
