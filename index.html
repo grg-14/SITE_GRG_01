@@ -1,23 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="FR-fr">
 
 <head>
   <meta charset="utf-8">
   <title>Titre page SITE_GRG_01</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- Appel de Google Fonts / lien copié-collé depuis Google Font -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet" /> -->
   <script src="script.js"></script>
+  <style>
+ .thin-red-border {
+  border-color: blueviolet;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50%;
+ }
+ .smaller-image {
+  width: 500px;
+  height: 500px;
+ }
+ <p> { 
+  font-family:monospace;
+ } 
+  h2 {
+    font-size: 30px;
+    font-family: "Balsamiq Sans", sans-serif;
+  }
+    .green-text01 {
+    color: green;
+  }
+    .pink-text01 {
+    color: hotpink;
+  }
+  </style>
 </head>
 
 <body>
   <h1>Test Netlify 01</h1>
   <id="top" test_netlify_h1>
     <!-- test n°4 -->
-    h2>test_netlfy_h2</h2>
+    <h2>test_netlfy_h2</h2>
     <main>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptates labore reprehenderit, animi
+      <p class=green-text01> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptates labore reprehenderit, animi
         asperiores repellat quos facilis quo sed quasi corporis dicta omnis doloremque exercitationem voluptate iste
         vel! Debitis, molestias?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis eligendi illum, possimus facilis
+      <p class=pink-text01> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis eligendi illum, possimus facilis
         exercitationem minima ratione incidunt nobis accusantium eius quasi fugiat nemo quaerat perspiciatis sit modi!
         Eveniet, veniam?</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis eligendi illum, possimus facilis
@@ -35,7 +61,7 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quis eligendi illum, possimus facilis
         exercitationem minima ratione incidunt nobis accusantium eius quasi fugiat nemo quaerat perspiciatis sit modi!
         Eveniet, veniam?</p>
-      <a href="http://www.okki.fr/" target="_blank"><img alt="elephant"
+      <a href="http://www.okki.fr/" target="_blank"><img class="smaller-image thin-red-border" alt="elephant"
           src="https://www.mavieencouleurs.fr/sites/default/files/styles/recipe_banner/public/2018-01/speed-detox.jpg">/</a>
       <ul>
         <li>1</li>
@@ -52,25 +78,49 @@
         <li>Test</li>
         </ul>
         <button type="submit">envoyer</button>
+        <div><h2>Trois choses que j'aime</h2>
         <form action="#">
           <label for="tapis">
             Tapis
-            <input id="tapis" type="radio" name="tapis-niche" />
+            <input
+            checked
+            value="tapis"
+            id="tapis"
+            type="radio"
+            name="tapis-niche" />
           </label>
           <label for="niche">
             Niche
-            <input id="niche" type="radio" name="tapis-niche" />
+            <input
+            value="niche"
+            id="niche"
+            type="radio"
+            name="tapis-niche" />
           </label>
           <button type="submit"></button>
+        </div>
+        <div><h2>Trois choses que j'aime pas</h2>
           <form action="http:okki.fr">
             <input required placeholder="url de la photo" type="text" />
              <label for="collier">Collier</label>
-             <input id="collier" type=checkbox />
+             <input 
+              value="colier"
+              id="collier"
+              type=checkbox 
+              name=”acessoires” />
              <label for="cabane">Cabanne</label>
-             <input id="cabane" type=checkbox />
+             <input
+              value="cabane"
+              id="cabane"
+              type=checkbox 
+              name=”acessoires” />
              <label for="maisons">Maison</label>
-             <input id="maison" type=checkbox 
-             name=”acessoires” />
+             <input
+              value=maison
+              id="maison"
+              type=checkbox 
+              name=”acessoires” />
+          </div>
            </form>          
     </main>
     <footer>
@@ -78,5 +128,4 @@
       <a href="#top">Remonter !</a>
     </footer>
 </body>
-
 </html>
